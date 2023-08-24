@@ -7,9 +7,9 @@ Well, whine no more! Use WARP to convert those pesky WebP images into other form
 
 ---
 
-### WARP Usage Options
+## WARP Usage Options
 
-#### Basic
+### Basic
 
 --version:
 Show the version number.
@@ -17,7 +17,7 @@ Show the version number.
 -h, --help:
 Show available options and usage guide.
 
-#### Image Processing
+### Image Processing
 
 -s, --source [path_to_image]:
 Set the source image path (Required).
@@ -34,7 +34,7 @@ Default: 90.
 Decide whether to overwrite the file if it already exists.
 Default: false.
 
-#### Advanced Image Manipulation
+### Advanced Image Manipulation
 
 --scale [percentage]:
 Rescale the image. Acceptable values range from -300 to 300%.
@@ -78,7 +78,7 @@ Default: false.
 
 ---
 
-### Dependencies
+## Dependencies
 
 This tool relies on several Node.js libraries to function. Here's a brief overview of each dependency and its role in WARP:
 
@@ -93,9 +93,9 @@ This tool relies on several Node.js libraries to function. Here's a brief overvi
 
 ---
 
-### Installation
+## Installation
 
-#### Installation from Repository
+### Installation from Repository
 
 If you're cloning the repository to use or develop WARP, you'll first need to install its dependencies:
 
@@ -105,7 +105,7 @@ npm install sharp yargs
 
 This command fetches the necessary libraries, allowing you to utilize the full functionality of the tool directly from the source code.
 
-#### Using the Standalone Release
+### Using the Standalone Release
 
 For users who want a plug-and-play solution without the need to manage dependencies, we provide a standalone executable:
 
@@ -113,7 +113,7 @@ For users who want a plug-and-play solution without the need to manage dependenc
 2. Download and save the appropriate executable for your operating system.
 3. Use it directly from the console by navigating to its location and invoking it.
 
-##### Adding the Executable to Your PATH
+### Adding the Executable to Your PATH
 
 By adding the standalone executable to your system's PATH, you can invoke the tool from any location in the console:
 
@@ -143,7 +143,7 @@ After adding the executable to your PATH, you can invoke WARP from any location 
 
 ---
 
-### The Boring Stuff (License)
+## The Boring Stuff (License)
 
 MIT License
 
