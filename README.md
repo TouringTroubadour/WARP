@@ -94,7 +94,7 @@ To install the dependencies for WARP, use the following command:
 
 This will fetch the necessary libraries and allow you to utilize the full functionality of the tool.
 
-#### The Boring Stuff (License)
+### The Boring Stuff (License)
 
 MIT License
 
