@@ -86,13 +86,52 @@ This tool relies on several Node.js libraries to function. Here's a brief overvi
    - **Role**: Helps in parsing command-line arguments and generating elegant user interfaces.
    - **Reason for Choosing**: Yargs is a comprehensive tool for building CLI applications. It provides helpful utilities for defining commands, options, and generating help messages. It's particularly beneficial for ensuring a smooth user experience.
 
-### Installation
+### Installation from Repository
 
-To install the dependencies for WARP, use the following command:
+If you're cloning the repository to use or develop WARP, you'll first need to install its dependencies:
 
-```npm install sharp yargs```
+```bash
+npm install sharp yargs
+```
 
-This will fetch the necessary libraries and allow you to utilize the full functionality of the tool.
+This command fetches the necessary libraries, allowing you to utilize the full functionality of the tool directly from the source code.
+
+---
+
+### Using the Standalone Release
+
+For users who want a plug-and-play solution without the need to manage dependencies, we provide a standalone executable:
+
+1. Navigate to the `./bin` directory.
+2. Download and save the appropriate executable for your operating system.
+3. Use it directly from the console by navigating to its location and invoking it.
+
+#### Adding the Executable to Your PATH
+
+By adding the standalone executable to your system's PATH, you can invoke the tool from any location in the console:
+
+- **Windows**:
+    1. Right-click on `This PC` or `Computer` on the desktop or in File Explorer.
+    2. Click `Properties`.
+    3. Choose `Advanced system settings` on the left.
+    4. Select `Environment Variables`.
+    5. In the System Variables section, find and select the `Path` variable. Click `Edit`.
+    6. In the Edit window, click `New` and paste the full path to the directory where you saved the executable.
+
+- **macOS and Linux**:
+    1. Open a terminal.
+    2. Edit your shell's profile script (e.g., `~/.bashrc`, `~/.zshrc`, etc.) with a text editor of your choice, like `nano` or `vim`.
+    3. Add the following line to the end of the file, replacing `/path/to/directory` with the full path to the directory where you saved the executable:
+
+    ```bash
+    export PATH="$PATH:/path/to/directory"
+    ```
+
+    4. Save the file and close the editor.
+    5. Reload your profile script (e.g., `source ~/.bashrc` or `source ~/.zshrc`).
+
+After adding the executable to your PATH, you can invoke WARP from any location in your terminal or console.
+
 
 ### The Boring Stuff (License)
 

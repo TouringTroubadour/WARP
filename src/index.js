@@ -22,7 +22,7 @@ const argv = yargs(hideBin(process.argv))
     alias: "quality",
     describe: "Quality for the output image (1-100)",
     type: "number",
-    default: 90,
+    default: 100,
   })
   .option("overwrite", {
     describe: "Overwrite the file if it already exists",
@@ -34,7 +34,7 @@ const argv = yargs(hideBin(process.argv))
       "Scale the image (percentage). Value should be between -300 to 300.",
     type: "number",
     default: 100,
-    check: (value) => value >= -300 && value <= 300,
+    check: (value) => value >= 0 && value <= 300,
   })
   .option("blur", {
     describe: "Apply blur effect (0 to 100).",
