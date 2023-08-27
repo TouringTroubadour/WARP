@@ -119,6 +119,7 @@ Before you begin, make sure you have the following:
   ```bash
   npm install
   ```
+  
   This command reads the package.json file and installs all the specified dependencies.
 
 ### Step 3: Run the JavaScript File
@@ -129,7 +130,9 @@ Before you begin, make sure you have the following:
   ```bash
   node warp.js
   ```
+
   Congratulations! You've successfully cloned a GitHub repository, installed dependencies, and run a JavaScript file.
+
 ---
 
 ## The Boring Stuff (License)
