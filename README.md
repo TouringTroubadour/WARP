@@ -95,52 +95,41 @@ This tool relies on several Node.js libraries to function. Here's a brief overvi
 
 ## Installation
 
-### Installation from Repository
+### Prerequisites
 
-If you're cloning the repository to use or develop WARP, you'll first need to install its dependencies:
+Before you begin, make sure you have the following:
 
-```bash
-npm install sharp yargs
-```
+1. **Git**: Install Git on your system. You can download it from [https://git-scm.com/](https://git-scm.com/).
+2. **Node.js and npm**: Install Node.js and npm (Node Package Manager) from [https://nodejs.org/](https://nodejs.org/).
 
-This command fetches the necessary libraries, allowing you to utilize the full functionality of the tool directly from the source code.
+### Step 1: Clone the GitHub Repository
 
-### Using the Standalone Release
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone the repository using the `cd` command.
+3. Clone the GitHub repository using the following command:
 
-For users who want a plug-and-play solution without the need to manage dependencies, we provide a standalone executable:
+   ```bash
+   git clone https://github.com/TouringTroubadour/WARP.git
+   ```
 
-1. Navigate to the `./bin` directory.
-2. Download and save the appropriate executable for your operating system.
-3. Use it directly from the console by navigating to its location and invoking it.
+### Step 2: Install Dependencies from package.json
 
-### Adding the Executable to Your PATH
+1. With the terminal open in the repository's directory, run the following command to install the required dependencies:
+  
+  ```bash
+  npm install
+  ```
+  This command reads the package.json file and installs all the specified dependencies.
 
-By adding the standalone executable to your system's PATH, you can invoke the tool from any location in the console:
+### Step 3: Run the JavaScript File
 
-- **Windows**:
-
-  1. Right-click on `This PC` or `Computer` on the desktop or in File Explorer.
-  2. Click `Properties`.
-  3. Choose `Advanced system settings` on the left.
-  4. Select `Environment Variables`.
-  5. In the System Variables section, find and select the `Path` variable. Click `Edit`.
-  6. In the Edit window, click `New` and paste the full path to the directory where you saved the executable.
-
-- **macOS and Linux**:
-
-  1. Open a terminal.
-  2. Edit your shell's profile script (e.g., `~/.bashrc`, `~/.zshrc`, etc.) with a text editor of your choice, like `nano` or `vim`.
-  3. Add the following line to the end of the file, replacing `/path/to/directory` with the full path to the directory where you saved the executable:
+1. Navigate to the directory containing the JavaScript file you want to run.
+2. Run the JavaScript file using Node.js For example:
 
   ```bash
-  export PATH="$PATH:/path/to/directory"
+  node warp.js
   ```
-
-  4. Save the file and close the editor.
-  5. Reload your profile script (e.g., `source ~/.bashrc` or `source ~/.zshrc`).
-
-After adding the executable to your PATH, you can invoke WARP from any location in your terminal or console.
-
+  Congratulations! You've successfully cloned a GitHub repository, installed dependencies, and run a JavaScript file.
 ---
 
 ## The Boring Stuff (License)
